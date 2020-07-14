@@ -73,7 +73,7 @@ glob(`${dir}/**/*.+(js|html|vue)`, {}, (er, files) => {
       const found = localeText[key];
       return !found || found.search(prefix) !== -1;
     })(foundMap);
-    console.log(`\n\n${language}: new translations found\n`, newTranslations);
+    //console.log(`\n\n${language}: new translations found\n`, newTranslations);
     let newObject = Object.assign({},
       localeText,
       _.mapValues(function(str) { return `${prefix}${str}` })(newTranslations)
