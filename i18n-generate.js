@@ -38,7 +38,7 @@ const dir = argv.d || argv.directory;
 const functionName = argv.f || argv.functionName || '__';
 const outputDirectory = argv.o || argv.output || 'translations';
 const languages = argv.l || argv.languages || 'en';
-const prefix = argv.p || argv.prefix || '!!';
+const prefix = argv.p || argv.prefix || '';
 const willTransformise = argv.t || argv.transformise || false;
 
 if (!dir) console.error('no directory supplied. use -d');
